@@ -9,8 +9,6 @@ defmodule Myapp.Application do
     children = [
       # Start the Ecto repository
       Myapp.Repo,
-      # Start the Telemetry supervisor
-      MyappWeb.Telemetry,
       # Start the PubSub system
       {Phoenix.PubSub, name: Myapp.PubSub},
       # Start the Endpoint (http/https)
