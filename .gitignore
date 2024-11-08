@@ -15,6 +15,8 @@
 
 # Ecto SQLite3 DB
 /priv/repo/db.sqlite3 
+/priv/repo/db.sqlite3-shm
+/priv/repo/db.sqlite3-wal
 
 # If the VM crashes, it generates a dump, let's ignore it too.
 erl_crash.dump
