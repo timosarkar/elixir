@@ -12,6 +12,7 @@ pkgs.mkShell {
     mix archive.install hex phx_new 1.5.9
     mix deps.get
     cd assets && npm install && node node_modules/webpack/bin/webpack.js --mode development
+    cd ..
     MIX_ENV=dev mix ecto.create
     MIX_ENV=dev mix ecto.migrate
     MIX_ENV=dev mix phx.server
